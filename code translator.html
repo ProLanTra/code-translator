@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+<div id="menu_header">code translator</div>
+        </div>
+        <div id="content">
+        <div id="first_block_content"></div>
+        <div id="second_block_content">
+            <!-- <form name="test" method="post" action="input1.php">
+                <p><b>Ваше имя:</b><br>
+                 <input type="text" size="40">
+                </p>
+                <p><b>Каким браузером в основном пользуетесь:</b><Br>
+                 <input type="radio" name="browser" value="ie"> Internet Explorer<Br>
+                 <input type="radio" name="browser" value="opera"> Opera<Br>
+                 <input type="radio" name="browser" value="firefox"> Firefox<Br>
+                </p>
+                <p>Комментарий<Br>
+                 <textarea name="comment" cols="40" rows="3"></textarea></p>
+                <p><input type="submit" value="Отправить">
+                 <input type="reset" value="Очистить"></p>
+                 <p><select name="food">
+                    <optgroup label="Русская кухня">
+                     <option value="r1">Закуска Барская</option>
+                     <option value="r2">Раки, фаршированные по-царски</option>
+                     <option value="r3">Биточки в горшочке</option>
+                    </optgroup>
+                    <optgroup label="Украинская кухня">
+                     <option value="u1">Галушки славянские</option>
+                     <option value="u2">Пампушки украинские</option>
+                     <option value="u3">Жаркое по-харьковски</option>
+                    </optgroup>
+                   </select></p>
+               </form> -->
+               <form name=:"translator_input" method="POST"action="./php.php">
+                <p><select name="prog_languages">
+                     <option selected disabled>Выберите язык</option>
+                     <option value="c++">C++</option>
+                     <option value="JavaScript">JavaScript</option>
+                     <option value="C#">C#</option>
+                     <option value="PHP">PHP</option>
+                     <option value="Python">Python</option>
+                     <option value="Basic">Basic</option>
+                   </select></p>
+                   <p id="code">ваш код<Br>
+                    <textarea name="input_code" cols="40" rows="3"></textarea></p>
+                   <p><input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить"></p>
+                </form>
+                <form name=:"translator_output" method="POST"action="php.php">
+                    <p><select name="prog_languages">
+                         <option selected disabled>Выберите язык</option>
+                         <option value="c++">C++</option>
+                         <option value="JavaScript">JavaScript</option>
+                         <option value="C#">C#</option>
+                         <option name="php" value="PHP">PHP</option>
+                         <option value="Python">Python</option>
+                         <option value="Basic">Basic</option>
+                       </select></p>
+                       <p id="code">перевод<Br>
+                        <textarea disabled name="output_code" cols="40" rows="3"></textarea></p>
+                        <p id="code">пример<Br>
+                        <textarea disabled name="example" cols="40" rows="3"></textarea></p>
+                    </form>
+        </div>
+        <div id="third_block_content"></div>
+        </div>
+        <div id="footer">
+        <div id="menu_footer"></div> 
+        </div>
+    </div>
+</body>
+</html>
