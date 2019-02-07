@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./javascript.js"></script>
-    <title>Document</title>
+    <script src="./code-translator.js"></script>
+    <title>code-translator</title>
 </head>
 
 <body>
@@ -59,8 +57,8 @@
                     <p id="code">ваш код
                         <Br>
                         <textarea name="input_code" cols="40" rows="3"></textarea></p>
-                    <p><input type="submit" value="Отправить">
-                        <input type="reset" value="Очистить"></p>
+                    <p><input type="button" value="Отправить" class="button">
+                        <input type="reset" value="Очистить" class="button"></p>
                 </form>
                 <form name=: "translator_output" method="POST" action="php.php">
                     <p><select name="prog_languages">
