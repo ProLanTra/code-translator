@@ -9,15 +9,27 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div id="menu_header">
+    <div class="wrapper">
+        <div class="header">
+            <div class="menu_header">
                 <h3>code translator</h3>
             </div>
         </div>
-        <div id="content">
-            <div id="first_block_content"></div>
-            <div id="second_block_content">
+        <div class="content">
+            <div class="first_block_content">
+                <h1 class="text1">
+                Здраствуйте,этот сайт создан для помощи программистам в работе.<br>
+                Наш сайт может переводить языки программирования.<br>
+                инструкция по пользованию сайтом далее.
+                </h1>
+            </div>
+            <div class="second_block_content">
+                <div class="text2">инструкция по использованию:<br>
+                    1.выберете язык с которого хотите переводить.<br>
+                    2.напешите код языка с которого хотите переводить.<br>
+                    3.выберете язык на который хотите перевести ваш код.<br>
+                    4.нажмите кнопку отправить.
+                </div>
                 <!-- <form name="test" method="post" action="input1.php">
                 <p><b>Ваше имя:</b><br>
                  <input type="text" size="40">
@@ -44,7 +56,7 @@
                     </optgroup>
                    </select></p>
                </form> -->
-                <form name=: "translator_input" method="POST" action="./php.php">
+                <form name="translator_input" method="POST" action="code-translator.js">
                     <p><select name="prog_languages">
                      <option selected disabled>Выберите язык</option>
                      <option value="c++">C++</option>
@@ -54,34 +66,41 @@
                      <option value="Python">Python</option>
                      <option value="Basic">Basic</option>
                    </select></p>
-                    <p id="code">ваш код
-                        <Br>
-                        <textarea name="input_code" cols="40" rows="3"></textarea></p>
+                    <div class="code">
+                        <p class="text_input">ваш код</p>
+                        <textarea name="input_code" cols="40" rows="3"></textarea>
+                    </div>
                     <p><input type="button" value="Отправить" class="button">
-                        <input type="reset" value="Очистить" class="button"></p>
+                        <input type="reset" value="Очистить" class="button">
+                    </p>
                 </form>
-                <form name=: "translator_output" method="POST" action="php.php">
+                <form name="translator_output" method="POST" action="code-translator.js">
                     <p><select name="prog_languages">
                          <option selected disabled>Выберите язык</option>
                          <option value="c++">C++</option>
                          <option value="JavaScript">JavaScript</option>
                          <option value="C#">C#</option>
-                         <option name="php" value="PHP">PHP</option>
+                         <option value="PHP">PHP</option>
                          <option value="Python">Python</option>
                          <option value="Basic">Basic</option>
-                       </select></p>
-                    <p id="code">перевод
-                        <Br>
-                        <textarea disabled name="output_code" cols="40" rows="3"></textarea></p>
-                    <p id="code">пример
-                        <Br>
-                        <textarea disabled name="example" cols="40" rows="3"></textarea></p>
+                       </select>
+                    </p>
+                    <div class="code">
+                        <p class="text_input">перевод</p>
+                        <textarea disabled name="output_code" cols="40" rows="3"></textarea>
+                    </div>
+                    <div class="code">
+                        <p class="text_input">пример</p>
+                        <textarea disabled name="example" cols="40" rows="3"></textarea>
+                    </div>
                 </form>
             </div>
-            <div id="third_block_content"></div>
+            <div class="third_block_content"></div>
         </div>
-        <div id="footer">
-            <div id="menu_footer"></div>
+        <div class="footer">
+            <div class="menu_footer">
+                    <input type="button" value="Тех.Поддержка" class="button2">
+            </div>
         </div>
     </div>
 </body>
