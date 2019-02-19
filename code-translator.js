@@ -4,12 +4,6 @@ function inp(){
     input_text = document.getElementById("input").value;
     inp_lang = document.getElementById("inplang").value;
     out_lang = document.getElementById("out_lang").value;
-    // if(inp_lang == inp_test1_1){
-    //     if(input_text == test1){
-    //         document.getElementById("out").value = "echo('123')";
-    //     }
-
-    // }
     switch(inp_lang)
     {
         case "JavaScript":
