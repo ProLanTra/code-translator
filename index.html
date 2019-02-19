@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
-    <script src="./code-translator.js"></script>
+    <script src="code-translator.js" defer></script>
     <title>code-translator</title>
 </head>
 
@@ -26,37 +26,38 @@
             </div>
             <div class="second_block_content">
                 <form name="translator_input" method="POST" action="code-translator.js">
-                    <p><select name="prog_languages">
+                    <p><select name="prog_languages" id="inplang">
                      <option selected disabled>Выберите язык</option>
-                     <option value="c++">C++</option>
+                     <!-- <option value="c++">C++</option> -->
                      <option value="JavaScript">JavaScript</option>
                      <option value="C#">C#</option>
                      <option value="PHP">PHP</option>
-                     <option value="Python">Python</option>
-                     <option value="Basic">Basic</option>
+                     <!-- <option value="Python">Python</option> -->
+                     <!-- <option value="Basic">Basic</option> -->
                    </select></p>
                     <div class="code">
                         <p class="text_input">ваш код</p>
-                        <textarea name="input_code" cols="40" rows="3"></textarea>
+                        <textarea name="input_code" cols="40" rows="3" id="input"></textarea>
                     </div>
-                    <p><input type="button" value="Отправить" class="button">
+                    <p><input type="button" value="Отправить" class="button" onclick="inp();">
                         <input type="reset" value="Очистить" class="button">
                     </p>
                 </form>
                 <form name="translator_output" method="POST" action="code-translator.js">
-                    <p><select name="prog_languages">
+                    <input type="reset" value="Очистить" class="button">
+                    <p><select name="prog_languages" id="out_lang">
                          <option selected disabled>Выберите язык</option>
-                         <option value="c++">C++</option>
+                         <!-- <option value="c++">C++</option> -->
                          <option value="JavaScript">JavaScript</option>
                          <option value="C#">C#</option>
                          <option value="PHP">PHP</option>
-                         <option value="Python">Python</option>
-                         <option value="Basic">Basic</option>
+                         <!-- <option value="Python">Python</option> -->
+                         <!-- <option value="Basic">Basic</option> -->
                        </select>
                     </p>
                     <div class="code">
                         <p class="text_input">перевод</p>
-                        <textarea disabled name="output_code" cols="40" rows="3"></textarea>
+                        <textarea disabled name="output_code" cols="40" rows="3" id="out"></textarea>
                     </div>
                     <div class="code">
                         <p class="text_input">пример</p>
