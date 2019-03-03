@@ -11,9 +11,10 @@
 <body>
     <div class="wrapper">
         <div class="header">
+                <!-- <img src="ico1.png" class= "ico"> -->
             <div class="menu_header">
                 <div class="web_name"><h3>code translator</h3></div>
-                <img src="ico2.png" class= "ico">
+                <!-- <img src="ico1.png" class= "ico"> -->
             </div>
         </div>
         <div class="content">
@@ -28,12 +29,12 @@
                 <form name="translator_input" method="POST" action="code-translator.js">
                     <p><select name="prog_languages" id="inplang">
                      <option selected disabled>Выберите язык</option>
-                     <!-- <option value="c++">C++</option> -->
+                     <option value="Ruby">Ruby</option>
                      <option value="JavaScript">JavaScript</option>
                      <option value="C#">C#</option>
                      <option value="PHP">PHP</option>
-                     <!-- <option value="Python">Python</option> -->
-                     <!-- <option value="Basic">Basic</option> -->
+                     <option value="Python">Python</option>
+                     <option value="Pascal">Pascal</option>
                    </select></p>
                     <div class="code">
                         <p class="text_input">ваш код</p>
@@ -47,12 +48,12 @@
                     <input type="reset" value="Очистить" class="button">
                     <p><select name="prog_languages" id="out_lang">
                          <option selected disabled>Выберите язык</option>
-                         <!-- <option value="c++">C++</option> -->
+                         <option value="Ruby">Ruby</option>
                          <option value="JavaScript">JavaScript</option>
                          <option value="C#">C#</option>
                          <option value="PHP">PHP</option>
-                         <!-- <option value="Python">Python</option> -->
-                         <!-- <option value="Basic">Basic</option> -->
+                         <option value="Python">Python</option>
+                         <option value="Pascal">Pascal</option>
                        </select>
                     </p>
                     <div class="code">
@@ -67,7 +68,7 @@
             </div>
             <div class="text2">инструкция по использованию:<br>
                 1.выберете язык с которого хотите переводить.<br>
-                2.напешите код языка с которого хотите переводить.<br>
+                2.напишите код языка с которого хотите переводить.<br>
                 3.выберете язык на который хотите перевести ваш код.<br>
                 4.нажмите кнопку отправить.
             </div>
