@@ -9,95 +9,331 @@ function inp(){
         case "JavaScript":
             switch(input_text)
         {
-            case "alert('123')":
+            case "alert('Hello, World!')":
                 switch(out_lang)
                 {
                     case "PHP":
-                        document.getElementById("out").value = "echo('123')";
+                        document.getElementById("out").value = "echo('Hello, World!')";
                         break;
                     case "C#":
-                        document.getElementById("out").value = "Console.Write('123')";
+                        document.getElementById("out").value = "Console.Write('Hello, World!')";
                         break;
+                    case "Ruby":
+                        document.getElementById("out").value ="puts 'Hello, World!'";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="print 'Hello, World!'";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="Writeln('Hello, World!')";
+                        break;   
                 }
             break;
-            case "var a":
+            case "var a = ''":
             switch(out_lang)
                 {
                     case "PHP":
-                        document.getElementById("out").value = "$ a";
+                        document.getElementById("out").value = "$ a = ''";
                         break;
                     case "C#":
-                        document.getElementById("out").value = "string/int a";
+                        document.getElementById("out").value = "string/int a = ''";
                         break;
+                    case "Ruby":
+                        document.getElementById("out").value ="$/@ a = ''";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="a = ''";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="a:''";
+                        break;    
                 }
+            break;
+            default:
+                document.getElementById("out").value = "извините,команда не распознана";
             break;
         }
         break;
         case "C#":
             switch(input_text)
         {
-            case "Console.Write('123')":
+            case "Console.Write('Hello, World!')":
                 switch(out_lang)
                 {
                     case "PHP":
-                        document.getElementById("out").value = "echo('123')";
+                        document.getElementById("out").value = "echo('Hello, World!')";
                         break;
                     case "JavaScript":
-                        document.getElementById("out").value = "alert('123')";
+                        document.getElementById("out").value = "alert('Hello, World!')";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="puts 'Hello, World!'";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="print 'Hello, World!'";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="Writeln('Hello, World!')";
                         break;
                 }
             break;
-            case "string a":
+            case "string a = ''":
             switch(out_lang)
                 {
                     case "PHP":
-                        document.getElementById("out").value = "$ a";
+                        document.getElementById("out").value = "$ a = ''";
                         break;
                     case "JavaScript":
-                        document.getElementById("out").value = "var a";
+                        document.getElementById("out").value = "var a = ''";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="$/@ a = ''";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="a = ''";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="a:''";
                         break;
                 }
             break;    
-            case "int a":
+            case "int a = ''":
             switch(out_lang)
                 {
                     case "PHP":
-                        document.getElementById("out").value = "$ a";
+                        document.getElementById("out").value = "$ a =''";
                         break;
                     case "JavaScript":
-                        document.getElementById("out").value = "var a";
+                        document.getElementById("out").value = "var a =''";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="$/@ a = ''";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="a = ''";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="a:''";
                         break;
                 }
-            break;    
+            break; 
+            default:
+                document.getElementById("out").value = "извините,команда не распознана";
+            break;   
                 
         }
         break;
         case "PHP":
             switch(input_text)
-            {
-            case "echo('123')":
+        {
+            case "echo('Hello, World!')":
                 switch(out_lang)
                 {
                     case "JavaScript":
-                        document.getElementById("out").value = "alert('123')";
+                        document.getElementById("out").value = "alert('Hello, World!')";
                         break;
                     case "C#":
-                        document.getElementById("out").value = "Console.Write('123')";
+                        document.getElementById("out").value = "Console.Write('Hello, World!')";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="puts 'Hello, World!'";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="print 'Hello, World!'";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="Writeln('Hello, World!')";
                         break;
                 }
             break;    
-            case "$ a":
+            case "$ a = ''":
             switch(out_lang)
                 {
                     case "C#":
-                        document.getElementById("out").value = "string/int a";
+                        document.getElementById("out").value = "string/int a = ''";
                         break;
                     case "JavaScript":
-                        document.getElementById("out").value = "var a";
+                        document.getElementById("out").value = "var a = ''";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="$/@ a = ''";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="a = ''";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="a:''";
                         break;
                 }
             break;
+            default:
+                document.getElementById("out").value = "извините,команда не распознана";
+            break;
                 
+        }
+        break;
+        case "Ruby":
+        switch(input_text)
+        {
+            case "puts 'Hello, World!'":
+                switch(out_lang)
+                {
+                    case "JavaScript":
+                        document.getElementById("out").value = "alert('Hello, World!')";
+                        break;
+                    case "C#":
+                        document.getElementById("out").value = "Console.Write('Hello, World!')";
+                        break;
+                    case "PHP":
+                        document.getElementById("out").value ="echo('Hello, World!')";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="print 'Hello, World!'";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="Writeln('Hello, World!')";
+                        break;
+                }
+            break;    
+            case "@ a = ''":  
+                switch(out_lang)
+                {
+                    case "C#":
+                        document.getElementById("out").value = "string/int a = ''";
+                        break;
+                    case "JavaScript":
+                        document.getElementById("out").value = "var a = ''";
+                        break;
+                    case "PHP":
+                        document.getElementById("out").value ="$ a = ''";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="a = ''";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="a:''";
+                        break;
+                }
+            break;
+            case "$ a = ''":
+                switch(out_lang)
+                {
+                    case "C#":
+                        document.getElementById("out").value = "string/int a = ''";
+                        break;
+                    case "JavaScript":
+                        document.getElementById("out").value = "var a = ''";
+                        break;
+                    case "PHP":
+                        document.getElementById("out").value ="$ a = ''";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="a = ''";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="a:''";
+                        break;
+                }
+            break;
+            default:
+                document.getElementById("out").value = "извините,команда не распознана";
+            break;
+        }
+        break;
+        case "Python":
+        switch(input_text)
+        {
+            case "print 'Hello, World!'":
+                switch(out_lang)
+                {
+                    case "JavaScript":
+                        document.getElementById("out").value = "alert('Hello, World!')";
+                        break;
+                    case "C#":
+                        document.getElementById("out").value = "Console.Write('Hello, World!')";
+                        break;
+                    case "PHP":
+                        document.getElementById("out").value ="echo('Hello, World!')";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="puts 'Hello, World!'";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="Writeln('Hello, World!')";
+                        break;
+                }
+            break;    
+            case "a = ''":
+                switch(out_lang)
+                {
+                    case "C#":
+                        document.getElementById("out").value = "string/int a = ''";
+                        break;
+                    case "JavaScript":
+                        document.getElementById("out").value = "var a = ''";
+                        break;
+                    case "PHP":
+                        document.getElementById("out").value ="$ a = ''";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="$/@ a = ''";
+                        break;
+                    case "Pascal":
+                        document.getElementById("out").value ="a:''";
+                        break;
+                }
+            break;
+            default:
+                document.getElementById("out").value = "извините,команда не распознана";
+            break;
+        }
+        break;
+        case "Pascal":
+        switch(input_text)
+        {
+            case "Writeln('Hello, World!')":
+                switch(out_lang)
+                {
+                    case "JavaScript":
+                        document.getElementById("out").value = "alert('Hello, World!')";
+                        break;
+                    case "C#":
+                        document.getElementById("out").value = "Console.Write('Hello, World!')";
+                        break;
+                    case "PHP":
+                        document.getElementById("out").value ="echo('Hello, World!')";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="puts 'Hello, World!'";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="print 'Hello, World!'";
+                        break;
+                }
+            break;    
+            case "a:''":
+                switch(out_lang)
+                {
+                    case "C#":
+                        document.getElementById("out").value = "string/int a = ''";
+                        break;
+                    case "JavaScript":
+                        document.getElementById("out").value = "var a = ''";
+                        break;
+                    case "PHP":
+                        document.getElementById("out").value ="$ a = ''";
+                        break;
+                    case "Ruby":
+                        document.getElementById("out").value ="$/@ a = ''";
+                        break;
+                    case "Python":
+                        document.getElementById("out").value ="a = ''";
+                        break;
+                }
+            break;
+            default:
+                document.getElementById("out").value = "извините,команда не распознана";
+            break;
         }
         break;
     }
